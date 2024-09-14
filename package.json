@@ -1,0 +1,16 @@
+{
+  "name": "orion",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "MI",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "electron": "^32.0.2",
+    "electron-packager": "^17.1.2"
+  }
+}

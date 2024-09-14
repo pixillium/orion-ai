@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orion AI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <section
+      class="bg-gray-200 w-full py-20 flex flex-col gap-2 justify-center items-center text-center"
+    >
+      <h6 class="py-2 px-3 bg-gray-200 rounded-lg">Orion AI</h6>
+      <h1 class="text-7xl">
+        Welcome to the <i>Orion</i> <span class="text-gray-500">System!</span>
+      </h1>
+      <p class="text-center">
+        Identify and integrate everything that can potentially double your
+        techniques, <br />
+        and implementing effective strategies. By enhancing every aspect of your
+        workflow, you can achieve anything.
+      </p>
+    </section>
+    <hr />
+    <section
+      class="p-20 flex flex-col gap-10 justify-center items-center w-full"
+    >
+      <h2 class="text-5xl underline">Marketing Tools</h2>
+      <aside class="grid grid-cols-3 gap-5 w-full">
+        <div class="flex flex-col gap-2">
+          <h6 class="text-gray-800 text-2xl">Instagram Follower</h6>
+          <input
+            id="IG_TF"
+            type="text"
+            placeholder="Targeted Username ..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <input
+            id="IG_SCROLL"
+            type="text"
+            placeholder="How much to scroll?"
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <input
+            id="IG_FOLLOWER"
+            type="text"
+            placeholder="Maximum Followers..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <input
+            id="IG_FOLLOWING"
+            type="text"
+            placeholder="Minimum Followings..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <input
+            id="IG_POSTS"
+            type="text"
+            placeholder="Minimum Posts..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <button
+            id="IG_BTN"
+            class="w-full bg-black hover:bg-gray-800 text-white p-2 rounded-lg"
+          >
+            Start
+          </button>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h6 class="text-gray-800 text-2xl">LinkedIn Connecter</h6>
+          <input
+            id="LI_KEYWORDS"
+            type="text"
+            placeholder="Search Query..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <input
+            id="LI_PAGES"
+            type="text"
+            placeholder="Max pages to visit..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <button
+            id="LI_BTN"
+            class="w-full bg-black hover:bg-gray-800 text-white p-2 rounded-lg"
+          >
+            Start
+          </button>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h6 class="text-gray-800 text-2xl">Facebook Inviter</h6>
+          <input
+            id="FB_GID"
+            type="text"
+            placeholder="Targeted Group ID..."
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <input
+            id="FB_SCROLL"
+            type="text"
+            placeholder="How much to scroll?"
+            class="border-2 py-1 px-2 rounded border-gray-900 focus:ring-2 focus:outline-0"
+          />
+          <button
+            id="FB_BTN"
+            class="w-full bg-black hover:bg-gray-800 text-white p-2 rounded-lg"
+          >
+            Start
+          </button>
+        </div>
+      </aside>
+      <hr class="w-full" />
+      <aside class="w-full flex flex-col gap-2">
+        <button
+          id="TX_BTN"
+          class="w-full bg-black hover:bg-gray-800 text-white p-2 rounded-lg tracking-wider"
+        >
+          Twitter Automation
+        </button>
+        <button
+          id="FB_UF"
+          class="w-full bg-black hover:bg-gray-800 text-white p-2 rounded-lg tracking-wider"
+        >
+          Facebook Unfriender
+        </button>
+        <button
+          onclick="window.location.href = 'https://github.com/orion-ai/blob/main/python/auto/ig_unfollow.js'"
+          class="w-full bg-gray-200 hover:bg-gray-300 p-2 rounded-lg tracking-wider"
+        >
+          Instagram unfollow with JS script
+        </button>
+        <button
+          class="w-full bg-gray-200 hover:bg-gray-300 p-2 rounded-lg tracking-wider"
+        >
+          Twitter unfollow with Extension
+        </button>
+      </aside>
+      <aside class="flex flex-col justify-center items-center relative">
+        <h2 class="text-5xl underline absolute top-0 place-self-center">
+          Built with Orion
+        </h2>
+        <spline-viewer
+          url="https://prod.spline.design/HpiAC4-GNFfbQJSl/scene.splinecode"
+        ></spline-viewer>
+      </aside>
+    </section>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
