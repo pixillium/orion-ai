@@ -1,29 +1,45 @@
-<!-- README.md -->
+# Orion AI - Marketing Automation and Voice Assistant for Windows
 
-# Hi, I'm MI! 👋
+Orion AI is a Windows-exclusive application that combines powerful marketing automation tools with integrated voice recognition functionality. It provides seamless solutions for social media automation like IG auto-follow, Facebook invites, LinkedIn connections, and Twitter follows—all controlled through voice commands or manual execution.
 
-Currently, you're seeing the ultimate orion-ai bot.
+## Features
 
-## 📫 How to use:
+- **Instagram Auto Follow**: Automatically follow Instagram accounts based on your preferences.
+- **Facebook Invite**: Send invites to friends or groups on Facebook with ease.
+- **LinkedIn Connect**: Automate connection requests on LinkedIn to grow your professional network.
+- **Twitter Follow**: Automatically follow users on Twitter based on set criteria.
+- **Voice Assistance**: Control automation tools and receive feedback via voice commands for a hands-free experience.
 
-> Orion is Only for Windows
-> **Prerequisites**
+## Prerequisites
 
-- Powershell
-- Python 3.10.10
-- pip
-- git
+Before you can run Orion AI, ensure you have the following installed on your system:
 
-  At first, clone this repository and run this `cd PATH_TO_THE_CLONED_REPOSITRY`.
-  Then, run the following command in powershell:
-  `python -m venv PATH_TO_THE_CLONED_REPOSITORY`
-  Then, activate the virtual environment by running the following command:
-  `PATH_TO_THE_CLONED_REPOSITORY\.venv\Scripts\activate`
-  Then, run the following command:
-  `pip install -r requirements.txt`
-  Add a folder named \***\*chrome_data\*\*** in the root directory of the repository.
-  Under the folder, create a folder named **default**.
-  Run the following command:
-  `PATH_TO_CHROME_EXE --user-data-dir="PATH_TO_USER_DIR" --remote-debugging-port=9111 --no-first-run --no-default-browser-check'`
+- **Python 3**: Required to run the backend scripts.
+- **NodeJS**: Used for various dependencies and features.
+- **Chrome Browser**: The automation runs through Chrome, so make sure you have it installed.
+- **Git**: For version control and cloning the repository.
+- **PowerShell**: Utilized by some of the automation scripts. **CMD** is recommended for command-line tasks.
 
-  And you're ready!
+## Installation Guide
+
+1. **Clone the Repository**:
+   Open **CMD** and run the following command to clone the Orion AI repository to your local machine:
+   ```cmd
+   git clone https://github.com/pixillium/orion-ai.git
+   cd orion-ai
+   ```
+2. **Set Up a Virtual Environment: Inside the cloned directory, set up a Python virtual environment**:
+   ```cmd
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+   > Open .env file and add your credentials.
+
+## Usage
+
+Copy the shortcut to your desktop and click on it to run the application.
+
+## Contributing
+
+Orion AI is currently a solo open-source project. Contributions are welcome! Feel free to fork the repository, make enhancements, and submit pull requests.

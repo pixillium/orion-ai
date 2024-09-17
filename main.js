@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { app, BrowserWindow, ipcMain } = require("electron/main");
 const { spawn, exec } = require("child_process");
 const path = require("path");
@@ -50,8 +52,11 @@ function execPyScript(path, args, indentifier) {
   });
 }
 function execChromeProfile() {
+  const chromePath = process.env.CHROME_PATH;
+  const chromeProfilePath = process.env.CHROME_PROFILE_PATH;
+
   exec(
-    '"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" --user-data-dir="E:\\Orion\\__chrome_data__\\default" --remote-debugging-port=9111 --no-first-run --no-default-browser-check',
+    `"${chromePath}" --user-data-dir="${chromeProfilePath}" --remote-debugging-port=9111 --no-first-run --no-default-browser-check`,
     (error, stdout, stderr) => {
       if (error) {
         log(`Chrome Error: ${error.message}`);

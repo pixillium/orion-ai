@@ -10,5 +10,5 @@ def sleep(min_seconds: float, max_seconds: float) -> None:
 
 def mprint(str: str) -> None:
     """Print a string to the console."""
-    sys.stdout.write(f"{str}\n")
+    sys.stdout.write(f"{str}")
     sys.stdout.flush()
